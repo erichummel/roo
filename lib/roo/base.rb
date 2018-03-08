@@ -306,7 +306,8 @@ class Roo::Base
       block_given? ? yield(row) : row
     end
 
-    options[:headers] == true ? results : results.drop(1)
+    results
+    # options[:headers] == true ? results : results.drop(1)
   end
 
   def row_with(query, return_headers = false)
